@@ -6,9 +6,31 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="assets/styles/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="assets/styles/bootstrap/bootstrap-grid.css">
+  <link rel="stylesheet" href="assets/styles/bootstrap/bootstrap-reboot.css">
+  <link rel="stylesheet" href="assets/styles/toast.min.css">
+  <link rel="stylesheet" href="assets/styles/index.css">
+  <script src="assets/javascripts/toast.min.js" defer></script>
+  <script src="assets/javascripts/indexPromises.js" defer></script>
 </head>
 <body>
+  <div class="container">
+    <a href="#" id="get-all-users" class="btn btn-primary">
+      Get Users
+    </a>
 
+    <div class="row">
+      <div class="col-lg-4">
+        <ul id="all-users" class="list-group"></ul>
+      </div>
+      <div class="col-lg-4">
+        <ul id="user-posts" class="list-group"></ul>
+      </div>
+      <div class="col-lg-4">
+        <ul id="post-comments" class="list-group"></ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
